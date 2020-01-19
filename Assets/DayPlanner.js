@@ -23,12 +23,11 @@ console.log(nowHour); //military time
 
 // Each timeblock is color coded to indicate whether it is in a past, present, or future hour.
 
-function rowColor () {
-          
-    $("data").each(function () {
+function rowColor () {          
+    $(".text").each(function () {
         var addHour = parseInt($(this).attr("id"));
-        console.log(addHour);
-   
+        console.log(addHour)
+
         if (nowHour > addHour) {
             $(this).removeClass("future");
             $(this).removeClass("present");
@@ -47,39 +46,29 @@ function rowColor () {
     });
 }
 
+rowColor();
+
 // Each timeblock contains an input field and save button.
-
-// $(".saveBtn").on("click", function() {
-//     let textInput = $(this).siblings(".text").val();
-//     let time = $(this).parent().attr("id");
-//     localStorage.setItem(time, textInput)
-
-//     console.log(textInput)
-// })
 
 
 $(".saveBtn").click(function() {
     textInput = $(this).siblings(".text").val();
-    console.log(textInput);
+    event.preventDefault();
     timeInfo = $(this).siblings(".time").text();
+    localStorage.setItem(timeInfo, JSON.stringify(textInput));   
+
+    console.log(textInput);
     console.log(timeInfo);
-    localStorage.setItem(timeInfo, JSON.stringify(textInput));
-    
-    
 })
 
 // Clicking a timeblock's "Save" button stores the input text in local storage, allowing the text to persist when the application is refreshed.
 
+function renderInput () {
+    var saveInput = JSON.parse(localStorage.getItem(""));
+    
+};
 
-
-
-
-
-
-
-
-
-
+renderInput()
 
 
 });  // closes the ready function at the top of the page

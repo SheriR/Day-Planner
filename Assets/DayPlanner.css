@@ -68,10 +68,10 @@ p.time {
  
 .btn.saveBtn {
     display: inline-block; 
-    background: #1fcfc3;
+    background: darkgrey;
     padding: 2px;
     width: fit-content;
-    border: 2px solid #1fcfc3;
+    border: 2px solid darkgray;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     color: white;
@@ -79,13 +79,16 @@ p.time {
 }
 
 .present {
-    background-color:#fadede; 
+    background-color:#bcc0c4; 
+    outline: inherit;
 }
 
 .past {
-    background-color: #d6d4d4;
+    background-color:#b84046;
+    outline: inherit;
 } 
 
 .future {
-    background-color: #b4fac1;
+    background-color: #7db6f0;
+    outline: inherit;
 }
