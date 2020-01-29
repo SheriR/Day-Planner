@@ -62,50 +62,29 @@ $(".saveBtn").click(function() {
 
 // Clicking a timeblock's "Save" button stores the input text in local storage, allowing the text to persist when the application is refreshed.
 
-// function getText () {
-//     // let userInput10 = localStorage.getItem("time10");
-//     // $("#10").text(userInput10);
-    
-//     var savedText9 = JSON.parse(localStorage.getItem("time9"));
-//     $("#9").val("");
-//     $("#9").val(savedText9);
+let userInput10 = localStorage.getItem("time10");
+$("#10").text(userInput10);
 
-// };
+let userInput11 = localStorage.getItem("time11");
+$("#11").text(userInput11);
 
-// getText()
+let userInput12 = localStorage.getItem("time12");
+$("#12").text(userInput12);
 
-function grabTextInput() {
-let savedText9 = document.getElementById("9")
-    if(localStorage.9)  {
-    savedText9.innerHTML = localStorage.9
-};
+let userInput13 = localStorage.getItem("time13");
+$("#13").text(userInput13);
 
+let userInput14 = localStorage.getItem("time14");
+$("#14").text(userInput14);
 
+let userInput15 = localStorage.getItem("time15");
+$("#15").text(userInput15);
 
+let userInput16 = localStorage.getItem("time16");
+$("#16").text(userInput16);
 
-// let userInput10 = localStorage.getItem("time10");
-// $("#10").text(userInput10);
-
-// let userInput11 = localStorage.getItem("time11");
-// $("#11").text(userInput11);
-
-// let userInput12 = localStorage.getItem("time12");
-// $("#12").text(userInput12);
-
-// let userInput13 = localStorage.getItem("time13");
-// $("#13").text(userInput13);
-
-// let userInput14 = localStorage.getItem("time14");
-// $("#14").text(userInput14);
-
-// let userInput15 = localStorage.getItem("time15");
-// $("#15").text(userInput15);
-
-// let userInput16 = localStorage.getItem("time16");
-// $("#16").text(userInput16);
-
-// let userInput17 = localStorage.getItem("time17");
-// $("#17").text(userInput17);
+let userInput17 = localStorage.getItem("time17");
+$("#17").text(userInput17);
 
 
 // clear button

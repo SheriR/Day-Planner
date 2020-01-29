@@ -79,12 +79,12 @@ p.time {
 }
 
 .present {
-    background-color:#bcc0c4; 
+    background-color: lightgoldenrodyellow; 
     outline: inherit;
 }
 
 .past {
-    background-color:#b84046;
+    background-color:lightgray;
     outline: inherit;
 } 
 
