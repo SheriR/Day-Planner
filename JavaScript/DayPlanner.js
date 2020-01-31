@@ -52,39 +52,43 @@ rowColor();
 // Each timeblock contains an input field and save button.
 $(".saveBtn").click(function() {
     textInput = $(this).siblings(".text").val();
-    event.preventDefault();
+    // event.preventDefault();
     timeInfo = $(this).siblings(".time").text();
     localStorage.setItem(timeInfo, JSON.stringify(textInput));   
 
-    console.log(textInput);
     console.log(timeInfo);
-})
+    console.log(localStorage)
+
+});
 
 // Clicking a timeblock's "Save" button stores the input text in local storage, allowing the text to persist when the application is refreshed.
 
-let userInput10 = localStorage.getItem("time10");
-$("#10").text(userInput10);
+let userInput9 = JSON.parse(localStorage.getItem(" 9:00 AM"));
+$('#9').text(userInput9);
 
-let userInput11 = localStorage.getItem("time11");
-$("#11").text(userInput11);
+let userInput10 = JSON.parse(localStorage.getItem("10:00 AM"));
+$('#10').text(userInput10);
 
-let userInput12 = localStorage.getItem("time12");
-$("#12").text(userInput12);
+let userInput11 = JSON.parse(localStorage.getItem("11:00 AM"));
+$('#11').text(userInput11);
 
-let userInput13 = localStorage.getItem("time13");
-$("#13").text(userInput13);
+let userInput12 = JSON.parse(localStorage.getItem("12:00 PM"));
+$('#12').text(userInput12);
 
-let userInput14 = localStorage.getItem("time14");
-$("#14").text(userInput14);
+let userInput13 = JSON.parse(localStorage.getItem(" 1:00 PM"));
+$('#13').text(userInput13);
 
-let userInput15 = localStorage.getItem("time15");
-$("#15").text(userInput15);
+let userInput14 = JSON.parse(localStorage.getItem(" 2:00 PM"));
+$('#14').text(userInput14);
 
-let userInput16 = localStorage.getItem("time16");
-$("#16").text(userInput16);
+let userInput15 = JSON.parse(localStorage.getItem(" 3:00 PM"));
+$('#15').text(userInput15);
 
-let userInput17 = localStorage.getItem("time17");
-$("#17").text(userInput17);
+let userInput16 = JSON.parse(localStorage.getItem(" 4:00 PM"));
+$('#16').text(userInput16);
+
+let textInput17 = JSON.parse(localStorage.getItem(" 5:00 PM"));
+$('#17').text(textInput17);
 
 
 // clear button
