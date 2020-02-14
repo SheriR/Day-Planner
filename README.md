@@ -16,5 +16,6 @@ Minimum Requirements
 * The current day is displayed at the top of the calendar.
 * Each timeblock is color coded to indicate whether it is in a past, present, or future hour.
 
-Licenses
-time: https://momentjs.com/
+The live page link is: https://sherir.github.io/Day-Planner/
+ 
+Licenses time: https://momentjs.com/
